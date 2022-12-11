@@ -53,17 +53,6 @@ function toggleImage() {
   selectImage(newImageIndex);
 }
 
-function changeDiv(nr) {
-  let element = document.getElementById("sectdiv" + nr);
-  let height = window.getComputedStyle(element).height;
-  if (height == "96px") {
-    document.getElementById("sectdiv" + nr).style.height = "846px";
-    document.getElementById("imgIcon" + nr).src = "icons/Vector.svg";
-  } else {
-    document.getElementById("sectdiv" + nr).style.height = "96px";
-    document.getElementById("imgIcon" + nr).src = "icons/Vector (1).svg";
-  }
-}
 ```
 # **Work experience** 
 Nothing yet
