@@ -4,7 +4,7 @@
 * **E-mail**: <maks.naumovich@gmal.com>
 * **Tel**: +48512008698
 # **About myself**
-My name is Maksim. I'm 15 years old. I'm from Belarus, but now I live in PLand. I want to improve yourself and became a nice coder. That's why I'm here.
+My name is Maksim. I'm 15 years old. I'm from Belarus, but now I live in Poland. I want to improve yourself and became a nice coder. That's why I'm here. 
 # **Skills** 
 * HTML
 * CSS/CASS/BEM
