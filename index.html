@@ -48,7 +48,41 @@
                 <li>Figma Basics</li>
             </ul>
         </section>
-        
+        <section class="code-example">
+            <h1 class="code-example__header">Code example</h1>
+            <pre>
+                <code>
+    const ACTIVE_COLOR = "#6F6F6F";
+    const INACTIVE_COLOR = "#CDCDCD";
+    const SLIDESHOW_TIME = 5000;
+    let activeImageIndex = 0;
+    let shouldPauseAnimation = false;
+
+    function setColorForButton(imageIndex, color) {
+      document.getElementById("button" + imageIndex).style.background = color;
+    }
+
+    function disableAllButtons() {
+      for (let imageIndex of [0, 1, 2]) {
+        setColorForButton(imageIndex, INACTIVE_COLOR);
+      }
+    }
+
+    function selectImage(imageIndex) {
+      // Updating image src
+      let newSrcForImage = "img/bicycle-" + imageIndex + ".png";
+      document.getElementById("myImage").src = newSrcForImage;
+
+      // Updating buttons
+      disableAllButtons();
+      setColorForButton(imageIndex, ACTIVE_COLOR);
+
+      activeImageIndex = imageIndex;
+    }
+                </code>
+            </pre>
+        </section>
+        <section class=""></section>
     </main>
 </body>
 </html>
