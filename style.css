@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
 }
@@ -10,14 +9,102 @@ h1 {
 }
 h2 {
     margin: 0;
+    font-size: 52px;
+    margin-bottom: 10px;
 }
 p {
     margin: 0;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-position: inside;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+pre {
+    margin: 0;
+    background-color: rgb(225 223 223);
+    border-radius: 10px;
+    padding-left: 45px;
+    overflow: scroll;
 
+}
+span {
+    font-weight: bold;
+}
+
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight:500
+}
+.header-li {
+    margin-right: 29px;
+}
+li:last-child {
+    margin: 0;
+}
+.header-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.main-header {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+
+/* main */
+section {
+    max-width: 1140px;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+
+/* contacts */
+
+.contacts__list {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.contacts__img-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 700px;
+    width: 240px;
+    height: 240px;
+}
+
+
+/* about myself */
+
+.about-myself__info {
+    height: auto;
+    width: 300px;
+}
 
 /* foooter */
 footer {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
 }
@@ -30,5 +117,5 @@ footer {
 .footer-header {
     display: flex;
     align-items: center;
-    font-size: 30px;
+    margin: 0;
 }
