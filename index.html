@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>
-            Maksim Navumovich
-        </h1>
+        <h1 class="main-header">Maksim Navumovich</h1>
         <nav>
             <ul>
                 <li><a href="#contacts">Contacts</a></li>
@@ -30,6 +29,7 @@
                 <li><span>Discord:</span> Junk#7813</li>
                 <li><span>E-mail:</span> maks.naumovich@gmal.com</li>
                 <li><span>Tel:</span> +48512008698</li>
+                <li><a href="https://github.com/Junk-debug">Github</a></li>
             </ul>
         </section>
         <section class="about-myself section">
@@ -50,8 +50,9 @@
         </section>
         <section class="code-example section">
             <h2 class="code-example__header header">Code example</h2>
-            <pre>
-                <code>
+            <div class="code-example__code-box">
+                <pre>
+                    <code>
     const ACTIVE_COLOR = "#6F6F6F";
     const INACTIVE_COLOR = "#CDCDCD";
     const SLIDESHOW_TIME = 5000;
@@ -79,8 +80,9 @@
 
       activeImageIndex = imageIndex;
     }
-                </code>
-            </pre>
+                    </code>
+                </pre>
+            </div>
         </section>
         <section class="work-experience section">
             <h2 class="work-experience__header header">Work-experience</h2>
@@ -107,7 +109,9 @@
         </section>
     </main>
     <footer>
-        <a class="footer-logo" href="https://rs.school/js/"><img src="/img/rs_school_js.svg" alt="rs school"></a>
+        <a class="githun-logo" href="https://github.com/Junk-debug"><img src="icons/github-mark.svg" alt="github-logo"></a>
+        <a class="rss-logo" href="https://rs.school/js/"><img style="width: 150px;" src="/icons/rs_school_js.svg" alt="rsschool-logo"></a>
+        <h2 class="footer-header">2022</h2>
     </footer>
 </body>
 </html>
