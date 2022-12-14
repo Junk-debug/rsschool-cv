@@ -1,5 +1,18 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('/fonts/Roboto/Roboto-Regular.ttf');
+    font-weight: regular;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url('/fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+}
 * {
     box-sizing: border-box;
+}
+html {
+    font-family: "Roboto";
 }
 body {
     margin: 0;
@@ -74,7 +87,7 @@ header {
 }
 nav {
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     font-weight:500;
     margin-bottom: 30px;
 }
@@ -84,7 +97,7 @@ nav {
     list-style-type: none;
 }
 .header-li {
-    margin-right: 29.19px;
+    margin-right: 42px;
 }
 li:last-child {
     margin: 0;
