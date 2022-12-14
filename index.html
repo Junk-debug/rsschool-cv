@@ -10,36 +10,42 @@
 <body>
     <header>
         <h1 class="main-header">Maksim Navumovich</h1>
-        <nav>
-            <ul>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#about-ms">About myself</a></li>
-                <li><a href="#skills">About myself</a></li>
-                <li><a href="#code-ex">Code example</a></li>
-                <li><a href="#work-xp">Work experience</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="#lang">Languages</a></li>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-li"><a href="#contacts">Contacts</a></li>
+                <li class="header-li"><a href="#about-ms">About myself</a></li>
+                <li class="header-li"><a href="#skills">Skills</a></li>
+                <li class="header-li"><a href="#code-ex">Code example</a></li>
+                <li class="header-li"><a href="#work-xp">Work experience</a></li>
+                <li class="header-li"><a href="#edu">Education</a></li>
+                <li class="header-li"><a href="#lang">Languages</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="contacts section">
-            <h2 class="contacts__header header">Contacts</h2>
-            <ul class="contacts__list">
-                <li><span>Discord:</span> Junk#7813</li>
-                <li><span>E-mail:</span> maks.naumovich@gmal.com</li>
-                <li><span>Tel:</span> +48512008698</li>
-                <li><a href="https://github.com/Junk-debug">Github</a></li>
-            </ul>
+        <section id="contacts" class="contacts section">
+            <div class="contacts__info">
+                <h2 class="contacts__header header">Contacts</h2>
+                <ul class="contacts__list">
+                    <li><a href="https://discordapp.com/users/junk#7813"><span>Discord:</span> Junk#7813</a></li>
+                    <li><a href="maks.naumovich@gmal.com"><span>E-mail:</span> maks.naumovich@gmal.com</a></li>
+                    <li><a href="https://t.me/movingkik"><span>Tel:</span> +48512008698</a></li>
+                    <li><a href="https://github.com/Junk-debug"><span>Github:</span> junk-debug</a></li>
+                </ul>
+            </div>
+            
+            <div class="contacts__img-box">
+                <img width="240" src="/img/photo_2022-12-13 11.16.23.jpeg" alt="profile-photo">
+            </div>
         </section>
-        <section class="about-myself section">
+        <section id="about-ms" class="about-myself section">
             <h2 class="about-myself__header header">About myself</h2>
             <p class="about-myself__info">My name is Maksim. I'm 15 years old.
             I'm from Belarus, but now I live in Poland. 
             I want to improve yourself and became a nice coder. 
             That's why I'm here.</p>
         </section>
-        <section class="skills section">
+        <section id="skills" class="skills section">
             <h2 class="skills__header header">Skills</h2>
             <ul class="skills__list">
                 <li>HTML</li>
@@ -48,47 +54,46 @@
                 <li>Figma Basics</li>
             </ul>
         </section>
-        <section class="code-example section">
+        <section id="code-ex" class="code-example section">
             <h2 class="code-example__header header">Code example</h2>
             <div class="code-example__code-box">
                 <pre>
                     <code>
-    const ACTIVE_COLOR = "#6F6F6F";
-    const INACTIVE_COLOR = "#CDCDCD";
-    const SLIDESHOW_TIME = 5000;
-    let activeImageIndex = 0;
-    let shouldPauseAnimation = false;
+const ACTIVE_COLOR = "#6F6F6F";
+const INACTIVE_COLOR = "#CDCDCD";
+const SLIDESHOW_TIME = 5000;
+let activeImageIndex = 0;
+let shouldPauseAnimation = false;
 
-    function setColorForButton(imageIndex, color) {
-      document.getElementById("button" + imageIndex).style.background = color;
-    }
+function setColorForButton(imageIndex, color) {
+  document.getElementById("button" + imageIndex).style.background = color;
+}
 
-    function disableAllButtons() {
-      for (let imageIndex of [0, 1, 2]) {
-        setColorForButton(imageIndex, INACTIVE_COLOR);
-      }
-    }
+function disableAllButtons() {
+  for (let imageIndex of [0, 1, 2]) {
+    setColorForButton(imageIndex, INACTIVE_COLOR);
+     }
+}
 
-    function selectImage(imageIndex) {
-      // Updating image src
-      let newSrcForImage = "img/bicycle-" + imageIndex + ".png";
-      document.getElementById("myImage").src = newSrcForImage;
+function selectImage(imageIndex) {
+  // Updating image src
+  let newSrcForImage = "img/bicycle-" + imageIndex + ".png";
+  document.getElementById("myImage").src = newSrcForImage;
 
-      // Updating buttons
-      disableAllButtons();
-      setColorForButton(imageIndex, ACTIVE_COLOR);
+  // Updating buttons
+  disableAllButtons();
+  setColorForButton(imageIndex, ACTIVE_COLOR);
 
-      activeImageIndex = imageIndex;
-    }
+  activeImageIndex = imageIndex;
                     </code>
                 </pre>
             </div>
         </section>
-        <section class="work-experience section">
+        <section id="work-xp" class="work-experience section">
             <h2 class="work-experience__header header">Work-experience</h2>
             <p class="work-experience__info">Nothing yet</p>
         </section>
-        <section class="section education">
+        <section id="edu" class="section education">
             <h2 class="education__header header">Education</h2>
             <ul class="education__list">
                 <li>Gimnasium nr 2, Brest</li>
@@ -97,7 +102,7 @@
                 <li>RSS</li>
             </ul>
         </section>
-        <section class="languages section">
+        <section id="lang" class="languages section">
             <h2 class="languages__header header">Languages</h2>
             <ul class="languages__list">
                 <li><span>Russian:</span> Native</li>
