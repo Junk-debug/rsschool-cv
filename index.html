@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-li"><a href="#contacts">Contacts</a></li>
+                <li class="header-li"><a href="#about-ms">About myself</a></li>
+                <li class="header-li"><a href="#skills">Skills</a></li>
+                <li class="header-li"><a href="#code-ex">Code example</a></li>
+                <li class="header-li"><a href="#work-xp">Work experience</a></li>
+                <li class="header-li"><a href="#edu">Education</a></li>
+                <li class="header-li"><a href="#lang">Languages</a></li>
+            </ul>
+        </nav>
+        <div class="header-img-h1-box">
+            <div class="header-img-box">
+                <img width="240" src="/img/profile-foto.jpeg" alt="profile-photo">
+            </div>
+            <h1 class="main-header">Maksim <br> Navumovich</h1>
+        </div>
+        
+    </header>
+    <main>
+        <section id="contacts" class="contacts section">
+            <div class="contacts__info">
+                <h2 class="contacts__header header">Contacts</h2>
+                <ul class="contacts__list">
+                    <li class="contacts__list-item"><a href="https://discordapp.com/users/junk#7813"> <img class="social-logo logo-img" src="/icons/discord.svg" alt="discord-logo"> Junk#7813</a></li>
+                    <li class="contacts__list-item"><a href="maks.naumovich@gmal.com"> <img class="social-logo" src="/icons/email.svg" alt="email-logo"> maks.naumovich@gmal.com</a></li>
+                    <li class="contacts__list-item"><a href="https://t.me/movingkik"> <img class="social-logo" src="/icons/telegram.svg" alt="telegram-logo"> @movingkik</a></li>
+                    <li class="contacts__list-item"><a href="https://github.com/Junk-debug"> <img class="social-logo" src="/icons/github.svg" alt="github-logo"> @junk-debug</a></li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section id="about-ms" class="about-myself section">
+            <h2 class="about-myself__header header">About myself</h2>
+            <p class="about-myself__info">My name is Maksim. I'm 15 years old.
+            I'm from Belarus, but now I live in Poland. 
+            I want to improve yourself and became a nice coder. 
+            That's why I'm here.</p>
+        </section>
+        <section id="skills" class="skills section">
+            <h2 class="skills__header header">Skills</h2>
+            <ul class="skills__list">
+                <li>HTML</li>
+                <li>CSS/SASS</li>
+                <li>Git Basics</li>
+                <li>Figma Basics</li>
+            </ul>
+        </section>
+        <section id="code-ex" class="code-example section">
+            <h2 class="code-example__header header">Code example</h2>
+            <div class="code-example__code-box">
+                <pre>
+                    <code>
+const ACTIVE_COLOR = "#6F6F6F";
+const INACTIVE_COLOR = "#CDCDCD";
+const SLIDESHOW_TIME = 5000;
+let activeImageIndex = 0;
+let shouldPauseAnimation = false;
+
+function setColorForButton(imageIndex, color) {
+  document.getElementById("button" + imageIndex).style.background = color;
+}
+
+function disableAllButtons() {
+  for (let imageIndex of [0, 1, 2]) {
+    setColorForButton(imageIndex, INACTIVE_COLOR);
+     }
+}
+
+function selectImage(imageIndex) {
+  // Updating image src
+  let newSrcForImage = "img/bicycle-" + imageIndex + ".png";
+  document.getElementById("myImage").src = newSrcForImage;
+
+  // Updating buttons
+  disableAllButtons();
+  setColorForButton(imageIndex, ACTIVE_COLOR);
+
+  activeImageIndex = imageIndex;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section id="work-xp" class="work-experience section">
+            <h2 class="work-experience__header header">Work-experience</h2>
+            <p class="work-experience__info">Nothing yet</p>
+        </section>
+        <section id="edu" class="section education">
+            <h2 class="education__header header">Education</h2>
+            <ul class="education__list">
+                <li>Gimnasium nr 2, Brest</li>
+                <li>Technikum nr 13, Gdansk</li>
+                <li>Udemy HTML/CSS course</li>
+                <li>RSS</li>
+            </ul>
+        </section>
+        <section id="lang" class="languages section">
+            <h2 class="languages__header header">Languages</h2>
+            <ul class="languages__list">
+                <li><span>Russian:</span> Native</li>
+                <li><span>Belorussian:</span> Native</li>
+                <li><span>English:</span> B1</li>
+                <li><span>Polish:</span> B1</li>
+                <li><span>Deutsch:</span> A1</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a class="githun-logo" href="https://github.com/Junk-debug"><img src="icons/github-mark.svg" alt="github-logo"></a>
+        <a class="rss-logo" href="https://rs.school/js/"><img style="width: 150px;" src="/icons/rs_school_js.svg" alt="rsschool-logo"></a>
+        <h2 class="footer-header">2022</h2>
+    </footer>
+</body>
+</html>
